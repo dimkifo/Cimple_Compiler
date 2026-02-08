@@ -1,0 +1,16 @@
+program check2
+{   declare a,b,c,d,e,f,g,x,k,y;
+    
+    if ([a>3 or b<=4 and c<>d]) 
+    {    x:=a;
+         y:=b+e
+    }
+    else
+         k:=f;
+    ;
+    while([x<10])
+          x:=y;
+    ;
+    call proc(in a,inout b);
+    e:=func(in c,in d,inout x)
+}.

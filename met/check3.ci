@@ -1,0 +1,39 @@
+program check3
+{	declare a,b,c;
+	procedure proc(in x,inout y)
+    {  function func(in m,in k)
+	   {    declare x;
+            declare z;
+		    x:=k;
+		    return (z)
+       }
+       y:=func(in x,in 5);
+       y:=y+5
+    }
+	function f(in q)
+	{   declare p;
+	    call proc(in q,inout p);
+	    forcase
+	         case (p<3) p:=p+5;
+		     case (p<5) p:=p*2;
+		     case (p>20) p:=p-3;
+		     default p:=7*p;
+	    ;
+		incase
+	         case (p<3) p:=p+5;
+		     case (p<5) p:=p*2;
+		     case (p>20) p:=p-3;
+	    ;
+		switchcase
+	         case (p<3) p:=p+5;
+		     case (p<5) p:=p*2;
+		     case (p>20) p:=p-3;
+		     default p:=7*p;
+	    ;
+	    return (p)
+    }
+	input (b);
+	a:=f(in b);
+	c:=a+b;
+	print (c);
+}.

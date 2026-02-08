@@ -1,0 +1,6 @@
+program check1
+{	declare a,b,c;
+	
+	c:=a*3-20/(b+a);
+	print (2*(c+7))
+}.
